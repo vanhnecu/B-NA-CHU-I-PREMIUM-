@@ -35,7 +35,7 @@ local Tabs = {
         Main0=Window:AddTab({ Title="Thông Tin" }),
         Main1=Window:AddTab({ Title="Script Farm" }),
         Main2=Window:AddTab({ Title="Script kaitun" }),
-   
+        Main3=Window:AddTab({ Title="Script auto bounty" }),
 }
     Tabs.Main0:AddButton({
     Title = "Youtuber",
@@ -285,5 +285,370 @@ getgenv().Setting = {
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/QuartyzScript/main/Loader.lua"))()
 
+  end
+})
+Tabs.Main3:AddButton({
+    Title="Matsune auto bounty",
+    Description="",
+    Callback=function()
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+getgenv().Team = "Pirates"
+getgenv().Config = {
+    ["Safe Health"] = {50},
+    ["Custom Y Run"] = {
+        Enabled = true,
+        ["Y Run"] = 5000
+    },
+    ["Hunt Method"] = {
+        ["Use Move Predict"] = true,
+        ["Hit and Run"] = true,
+        ["Aimbot"] = true,
+        ["ESP Player"] = true,
+        ["Max Attack Time"] = 60
+    },
+    ["Shop"] = {
+        ["Random Fruit"] = false,
+        ["Store Fruit"] = true,
+        ["Zoro Sword"] = false
+    },
+    ["Setting"] = {
+        ["World"] = 3,
+        ["White Screen"] = false,
+        ["Click Delay"] = 0.1,
+        ["Url"] = "Your_Webhook_Url",
+        ["Chat"] = {
+            Enabled = true,
+            Wait = 350,
+            Massage = {"Lion Hub On Top", "Get Best Script g g / lionhub"}
+        }
+    },
+    ["Skip"] = {
+        ["Avoid V4"] = false
+    },
+    ["Spam All Skill On V4"] = {
+        Enabled = true,
+        ["Weapons"] = {"Melee", "Sword", "Gun", "Blox Fruit"}
+    },
+    Items = {
+        Use = {"Melee", "Sword"},
+        Melee = {
+            Enable = true,
+            Delay = 0.6,
+            Skills = {
+                Z = {Enable = true, HoldTime = 0.3},
+                X = {Enable = true, HoldTime = 0.2},
+                C = {Enable = true, HoldTime = 0.5}
+            }
+        },
+        Sword = {
+            Enable = true,
+            Delay = 0.5,
+            Skills = {
+                Z = {Enable = true, HoldTime = 1},
+                X = {Enable = true, HoldTime = 0}
+            }
+        },
+        Gun = {
+            Enable = false,
+            Delay = 0.2,
+            Skills = {
+                Z = {Enable = false, HoldTime = 0.1},
+                X = {Enable = false, HoldTime = 0.1}
+            }
+        },
+        ["Blox Fruit"] = {
+            Enable = true,
+            Delay = 0.4,
+            Skills = {
+                Z = {Enable = true, HoldTime = 0.1},
+                X = {Enable = true, HoldTime = 0.1},
+                C = {Enable = true, HoldTime = 0.15},
+                V = {Enable = false, HoldTime = 0.2},
+                F = {Enable = true, HoldTime = 0.1}
+            }
+        }
+    }
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/10f7f97cebba24a87808c36ebd345a97.lua"))()
+  end
+})
+Tabs.Main3:AddButton({
+    Title="Xero auto bounty",
+    Description="",
+    Callback=function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/pisovn/OisiRoblox1/refs/heads/main/AutoBountyXero"))()
+  end
+})
+Tabs.Main3:AddButton({
+    Title="HoHo auto bounty",
+    Description="",
+    Callback=function()
+script_key = "PASTE_KEY_HERE";
+_G["HoHo Hub Auto Bounty V4"] = {
+    ["Avatar"] = "rbxassetid://8598068647",
+    ["Farm Method"] = "Normal",
+    ["Select Team"] = "Pirate",
+    ["Discord Webhook"] = "",
+    ["Bypass Teleport"] = false,
+    ["Max Level Distance"] = 612,
+    ["Don't attack friends"] = true,
+    ["Don't attack player have cup"] = false,
+    ["Distance Attack Y"] = 2, -- Shark Race = 0; Another >= 6
+    ["Chat After Kill"] = {
+        ["Active"] = false,
+        ["List Chat"] = {""},
+    },
+    ["Yourself"] = {
+        ["Invisible From Ken"] = true,
+        ["No Stun"] = true,
+    },
+    ["SafeZone"] = {Enabled = true, ["Health Left (%)"] = 25, ["Wait Until Heal (%)"] = 80},
+    ["Time Control"] = {
+        ["Max Time Target Player"] = 120,
+    },
+    ["Abilities"] = {
+        ["Auto Click"] = true,
+        ["Melee"] = {
+            Z = {Enabled = true, Hold = 0.05, WaitNextSkill = 0.6},
+            X = {Enabled = true, Hold = 0.05, WaitNextSkill = 0.6},
+            C = {Enabled = true, Hold = 0.05, WaitNextSkill = 0.6},
+        },
+        ["Sword"] = {
+            Z = {Enabled = true, Hold = 0.05, WaitNextSkill = 0.6},
+            X = {Enabled = true, Hold = 0.05, WaitNextSkill = 0.6},
+        },
+        ["Gun"] = {
+            Z = {Enabled = true, Hold = 0.05, WaitNextSkill = 0.6},
+            X = {Enabled = true, Hold = 0.05, WaitNextSkill = 0.6},
+        },
+        ["Fruit"] = {
+            Z = {Enabled = false, Hold = 0.05, WaitNextSkill = 0.6},
+            X = {Enabled = false, Hold = 0.05, WaitNextSkill = 0.6},
+            C = {Enabled = false, Hold = 0.05, WaitNextSkill = 0.6},
+            V = {Enabled = false, Hold = 0.05, WaitNextSkill = 0.6}, -- don't forget to disable V if u r using zoan fruits
+            F = {Enabled = false, Hold = 0.05, WaitNextSkill = 0.6},
+        },
+    },
+}
+_G.SupperFixLag = true
+_G["Auto Gacha & Store Fruit"] = true
+_G.loadCustomId = "fac6dbd013c78163f8061ce11b2c1330"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+  end
+})
+Tabs.Main3:AddButton({
+    Title="W-AZURE auto bounty",
+    Description="",
+    Callback=function()
+script_key = ""
+getgenv().Team = "Pirates"
+getgenv().WebhookSetting = {
+    Enable = false,
+    Url = "",
+    Embed = true,
+    StoredFruit = true,
+    ImageEmbed = true,
+    CustomImage = false,
+    CustomImageUrl = "", --Your Url
+    OnServerHop = true,
+    BountyChanged = true,
+}
+getgenv().PlayerSetting = {
+    SafeMode = true,
+    SafeModeHealth = {4000,69},--Number And %, Start Safe Mode And Stop Safe Mode
+    UseRaceV3 = true,
+    SmartUseRaceV3= true,
+    DashIfV4 = true,
+    Dash=true,
+    IgnoreInCombat = true, --Turn This Off When Reseting Or Hop You Lost Bounty (Rare, Happens On Some Accounts)
+    ChatKillEnable = false,
+    Chat = {"Ez","You're just too bad"},
+    IgnoreFriends = true, --Serverhop if you friend in your server
+}
+getgenv().AttackSetting = {
+    ForceMelee = true,
+    ForceMeleeTime = 3,
+    StopAttack =true, --When Meet Below Condition
+    StopAttackAtHealth = 80,--%
+    FastAttack=true, -- Toggle Fast Attack
+}
+getgenv().UseSkillSetting = {
+    -- Three Methods: "Normal", "Fast", "Spam", "SpamAll"
+    MethodIfTargetOnV4 = "Fast",
+    MethodIfPlayerOnV4 = "SpamAll",
+    MethodIfTargetUseFruit = {Fruits={Portal,Kitsune,Buddha},Method="Fast"},
+    NormalMethod = "Normal",
+    LowHealthPlayerCondition = { --Player Can Attack Us, No Need For Slow Attack
+        Enable = true,
+        Health = 70,--%Health That Are Low
+        Method = "Fast",
+    },
+    LowHealthTargetCondition = {
+        Enable = true,
+        Health = 30,--%Health That Are Low
+        DelayFirstTime = {true,2}, --1 Is Enable, 2 Is Second To Delay Before Attack Again
+        Method = "Normal",
+        WaitTime = 1.5,-- If Normal Method, Wait Every Skill If It Hits Target
+    }
+}
+getgenv().WeaponsSetting = {
+    ["Melee"] = {
+        ["Enable"] = true,
+        ["Delay"] = 1, 
+        ["SwitchNextWeaponIfCooldown"] = true,
+        ["Skills"] = {
+            ["Z"] = {
+                ["Enable"] = true,
+                ["NoPredict"] = true, -- For Dragon Tailon, Disable it 
+                ["HoldTime"] = 0,
+                ["TimeToNextSkill"] = 0,
+            },
+        [ "X"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0,
+                ["TimeToNextSkill"] = 0,
+            },
+
+            ["C"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.5,
+                ["TimeToNextSkill"] = 0,
+            },
+        },
+    },
+    ["Blox Fruit"] = {
+        ["Enable"] = false,
+        ["Delay"] = 4,
+        ["SwitchNextWeaponIfCooldown"] = true,
+        ["Skills"] = {
+            ["Z"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 2,
+                ["TimeToNextSkill"] = 0,
+            },
+            ["X"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0,
+                ["TimeToNextSkill"] = 0,
+            },
+
+            ["C"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0,
+                ["TimeToNextSkill"] = 0,
+            },
+            ["V"] = {
+                ["Enable"] = false,
+                ["HoldTime"] = 0,
+                ["TimeToNextSkill"] = 0,
+            },
+            ["F"] = {
+                ["Enable"] = false,
+                ["HoldTime"] = 0,
+                ["TimeToNextSkill"] = 0,
+            },
+        },
+    },
+    ["Sword"] = {
+        ["Enable"] = true,
+        ["Delay"] = 0.7,
+        ["Skills"] = {
+            ["Z"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.8,
+                ["TimeToNextSkill"] = 0,
+            },
+            ["X"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.2,
+                ["TimeToNextSkill"] = 0,
+            },
+        },
+    },
+    ["Gun"] = {
+        ["Enable"] = false,
+        ["Delay"] = 0.5,
+        ["Skills"] = {
+            ["Z"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.1,
+                ["TimeToNextSkill"] = 0,
+            },
+            ["X"] = {
+                ["Enable"] = true,
+                ["HoldTime"] = 0.1,
+                ["TimeToNextSkill"] = 0,
+            },
+        },
+    },
+}
+getgenv().Theme = { -- getgenv().Theme = false if you want to disable
+    OldTheme = true,
+    Name="Raiden", --"Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
+    Custom={
+            ["Enable"] = false,
+            ['char_size'] = UDim2.new(0.668, 0, 1.158, 0),
+            ['char_pos'] = UDim2.new(0.463, 0, -0.105, 0),
+            ['title_color'] = Color3.fromRGB(255, 221, 252),
+            ['titleback_color'] = Color3.fromRGB(169, 20, 255),
+            ['list_color'] = Color3.fromRGB(255, 221, 252),
+            ['liststroke_color'] = Color3.fromRGB(151, 123, 207),
+            ['button_color'] = Color3.fromRGB(255, 221, 252)
+       }
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/248f97d7a28a4d09c641d8279a935333.lua"))()
+
+  end
+})
+Tabs.Main3:AddButton({
+    Title="WINTER auto bounty",
+    Description="",
+    Callback=function()
+getgenv().Setting = {
+  ["Team" HUB] = "Pirates",
+  ["Chat" HUB] = {},
+  ["Skip Race V4" HUB] = true,
+  ["Misc" HUB] = {
+    ["Enable Lock Bounty" HUB] = false,
+    ["Lock Bounty" HUB] = {0, 300000000},
+    ["Hide Health" HUB] = {4500,5000},
+    ["Lock Camera" HUB] = true,
+    ["Enable Cam Farm" HUB] = false,
+    ["White Screen" HUB] = false,
+    ["FPS Boost" HUB] = false,
+    ["Bypass TP" HUB] = false,
+    ["Random & Store Fruit" HUB] = false,
+  },
+  ["Item" HUB] = {
+    ["Melee" HUB] = {["Enable" HUB] = true,
+      ["Z" HUB] = {["Enable" HUB] = true, ["Hold Time" HUB] = 1.5},
+      ["X" HUB] = {["Enable" HUB] = true, ["Hold Time" HUB] = 0.1},
+      ["C" HUB] = {["Enable" HUB] = true, ["Hold Time" HUB] = 0.1}
+    },
+    ["Blox Fruit" HUB] = {["Enable" HUB] = true,
+      ["Z" HUB] = {["Enable" HUB] = true, ["Hold Time" HUB] = 1.5},
+      ["X" HUB] = {["Enable" HUB] = true, ["Hold Time" HUB] = 0},
+      ["C" HUB] = {["Enable" HUB] = true, ["Hold Time" HUB] = 0},
+      ["V" HUB] = {["Enable" HUB] = true, ["Hold Time" HUB] = 0},
+      ["F" HUB] = {["Enable" HUB] = true, ["Hold Time" HUB] = 0}
+    },
+    ["Sword" HUB] = {["Enable" HUB] = true,
+      ["Z" HUB] = {["Enable" HUB] = true, ["Hold Time" HUB] = 0.1},
+      ["X" HUB] = {["Enable" HUB] = true, ["Hold Time" HUB] = 0.1}
+    },
+    ["Gun" HUB] = {["Enable" HUB] = true,
+      ["Z" HUB] = {["Enable" HUB] = true, ["Hold Time" HUB] = 0.1},
+      ["X" HUB] = {["Enable" HUB] = true, ["Hold Time" HUB] = 0.1}
+    }
+  }
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Yatsuraa/Hori/main/winterbounty.lua"))()
+  end
+})
+Tabs.Main3:AddButton({
+    Title="Xero auto bounty",
+    Description="",
+    Callback=function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/pisovn/OisiRoblox1/refs/heads/main/AutoBountyXero"))()
   end
 })
